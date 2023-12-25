@@ -1,0 +1,111 @@
+.it_component {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+}
+
+.it_component img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itc_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.itc_content {
+    margin: 0 200px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.itc_box {
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(250,250,250,0.2);
+    border-radius: 20px;
+    height: auto;
+    position: relative;
+}
+
+.itc_box_content {
+    padding: 1rem;
+    height: auto;
+}
+
+.itc_title {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.itc_desc {
+    max-width: 320px;
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+.itc_price {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.itc_box_content a {
+    background-color: var(--yellow);
+    text-decoration: none;
+    width: 200px;
+    height: 45px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.itc_box_content a svg {
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .itc_content {
+        margin: 0 160px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .itc_content {
+        margin: 0 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .itc_content {
+        margin: 0 80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .itc_content {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .itc_content {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .itc_content {
+        margin: 0 5px;
+    }
+}

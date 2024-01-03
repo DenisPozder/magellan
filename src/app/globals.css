@@ -16,15 +16,3 @@
   height: 100%;
   overflow: hidden;
 }
-
-.eventlin-btn {
-  z-index: 25;
-  width: 200px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--yellow);
-  cursor: pointer;
-  color: var(--white);
-}

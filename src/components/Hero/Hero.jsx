@@ -9,7 +9,7 @@ const Hero = () => {
             <div className={styles.hero_text}>
                 <h1><span>Putujte kroz</span><span>svet ukusa.</span></h1>
                 <p>U prijatnoj atmosferi našeg restorana, krenite na put oko sveta. Sigurni smo da čak i najzahtevnije sladokusce nećemo ostaviti ravnodušnim.</p>
-                <Link href={'#'}>rezerviši mesto</Link>
+                <Link href={'/reservations'}>rezerviši mesto</Link>
             </div>
             <div className={styles.hero_icons}>
                 <button className={styles.hero_parking}>P</button>

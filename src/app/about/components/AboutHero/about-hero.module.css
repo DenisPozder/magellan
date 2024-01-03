@@ -1,0 +1,41 @@
+.about_hero {
+    background-color: var(--purple);
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    z-index: 2;
+}
+
+.about_hero_content {
+    z-index: 4;
+    position: relative;
+    margin: 0 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+}
+
+.about_hero_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_hero_text h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.about_hero_text .aht_par1 {
+    max-width: 400px;
+    color: var(--white);
+    margin: 2rem 0;
+}
+
+.about_hero_text .aht_par2 {
+    max-width: 400px;
+    color: var(--white);
+}

@@ -58,6 +58,10 @@
     margin-right: 0;
 }
 
+.header_links a.header_link_active {
+    color: var(--yellow);
+}
+
 .header_toggle_content {
     display: none;
 }

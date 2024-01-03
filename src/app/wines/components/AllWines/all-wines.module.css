@@ -1,0 +1,241 @@
+.all_wines {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: var(--purple);
+}
+
+.all_wines .all_wines_paper {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -380px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.all_wines_container {
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+
+.all_wines_content {
+    width: auto;
+    margin: 0 120px;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.all_wines_bottle {
+    width: 100%;
+    height: auto;
+}
+
+.all_wines_bottle img {
+    width: 100%;
+    height: auto;
+}
+
+/*----- All wines section / Search / Pagination -----*/
+.all_wines_section {
+    width: 100%;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.all_wines_section .aws_search_content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+.all_wines_section .aws_search_content input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.all_wines_section .aws_search_content .aws_search_btn {
+    position: absolute;
+    right: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.all_wines_section .aws_search_content .aws_search_btn svg {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+/*----- Mapping all wines here -----*/
+.all_wines_section .aws_wines {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+}
+
+.all_wines_section .aws_wines .wine_section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.all_wines_section .aws_wines .wine_section .wine_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: span 2;
+    position: relative;
+}
+
+.all_wines_section .aws_wines .wine_section .wine_title h3 {
+    color: var(--white);
+}
+
+.all_wines_section .aws_wines .wine_section .wine_title p {
+    color: var(--white);
+}
+
+.all_wines_section .aws_wines .wine_section .wine_quantity {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+}
+
+.all_wines_section .aws_wines .wine_section .wine_percentage {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+}
+
+.all_wines_section .aws_wines .wine_section .wine_price {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+}
+
+/*----- Wines Pagination -----*/
+.aws_pagination {
+    display: flex;
+    align-items: center;
+}
+
+.aws_pagination .aws_btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.aws_pagination .aws_btn svg {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.aws_pagination .aws_btn_prev {
+    margin-right: 1rem;
+}
+
+.aws_pagination .aws_btn_next {
+    margin-left: 1rem;
+}
+
+.aws_pagination .aws_btn_number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0 .5rem;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--yellow);
+    font-weight: bold;
+}
+
+.aws_pagination .aws_btn_number:disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .all_wines .all_wines_paper {
+        top: -360px;
+    }
+
+    .all_wines_content {
+        margin: 0 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .all_wines .all_wines_paper {
+        top: -260px;
+    }
+
+    .all_wines_content {
+        margin: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .all_wines .all_wines_paper {
+        top: -200px;
+    }
+
+    .all_wines_content {
+        margin: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .all_wines .all_wines_paper {
+        top: -120px;
+    }
+
+    .all_wines_content {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .all_wines_content {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .all_wines_content {
+        margin: 0 5px;
+    }
+}

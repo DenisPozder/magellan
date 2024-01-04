@@ -1,8 +1,13 @@
+import ReservationHero from "./components/ReservationHero/ReservationHero"
 
 
 const page = () => {
   return (
-    <div>Reservations</div>
+    <>
+    <div>
+      <ReservationHero />
+    </div>
+    </>
   )
 }
 

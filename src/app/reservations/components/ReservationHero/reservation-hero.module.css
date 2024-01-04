@@ -1,0 +1,47 @@
+.reservation_hero_section {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to bottom, var(--purple) 50%, transparent);
+}
+
+.reservation_hero_section .reservation_hero_image {
+    width: 100%;
+    height: calc(60vh + 400px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.reservation_hero_content {
+    z-index: 4;
+    position: relative;
+    margin: 0 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+}
+
+.reservation_hero_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation_hero_text h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.reservation_hero_text p {
+    max-width: 400px;
+    color: var(--white);
+    margin: 2rem 0;
+}

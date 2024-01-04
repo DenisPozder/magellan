@@ -32,6 +32,9 @@
 .all_wines_bottle {
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .all_wines_bottle img {
@@ -215,6 +218,11 @@
 
     .all_wines_content {
         margin: 0 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all_wines_bottle {
+        display: none;
     }
 }
 
@@ -225,6 +233,40 @@
 
     .all_wines_content {
         margin: 0 15px;
+    }
+
+    .all_wines_section .aws_wines .wine_section .wine_title h3 {
+        color: var(--white);
+        font-size: .9rem;
+    }
+    
+    .all_wines_section .aws_wines .wine_section .wine_title p {
+        color: var(--white);
+        font-size: .7rem;
+    }
+    
+    .all_wines_section .aws_wines .wine_section .wine_quantity {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: var(--white);
+        font-size: .7rem;
+    }
+    
+    .all_wines_section .aws_wines .wine_section .wine_percentage {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: var(--white);
+        font-size: .7rem;
+    }
+    
+    .all_wines_section .aws_wines .wine_section .wine_price {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        color: var(--white);
+        font-size: .7rem;
     }
 }
 

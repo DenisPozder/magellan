@@ -67,3 +67,52 @@
     color: var(--white);
 }
 
+@media only screen and (max-width: 1440px) {
+    .reservation_slider .rs_carousel .rs_btns {
+        left: 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .reservation_slider .rs_carousel .rs_btns {
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .reservation_slider .rs_carousel .rs_btns {
+        left: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .reservation_slider .rs_carousel .rs_btns {
+        left: 15px;
+    }
+
+    .reservation_slider {
+        height: 120vh;
+    }
+
+    .reservation_slider .rs_carousel .rs_inner {
+        height: 120vh;
+    }
+    
+    .reservation_slider .rs_carousel .rs_inner .rs_item {
+        height: 120vh;
+        min-height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .reservation_slider .rs_carousel .rs_btns {
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .reservation_slider .rs_carousel .rs_btns {
+        left: 5px;
+    }
+}
+

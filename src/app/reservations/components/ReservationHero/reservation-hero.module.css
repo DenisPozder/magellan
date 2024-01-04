@@ -79,6 +79,17 @@
     .reservation_hero_text h1 {
         font-size: 2.6rem;
     }
+
+    .reservation_hero_section .reservation_hero_image {
+        width: 100%;
+        height: calc(70vh + 240px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        object-fit: cover;
+        pointer-events: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {

@@ -116,11 +116,19 @@
     .hero_section .hero_image {
         height: calc(70vh + 300px);
     }
+
+    .hero_text h1 {
+        font-size: 2.6rem;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .hero_content {
         margin: 0 15px;
+    }
+
+    .hero_text h1 {
+        font-size: 2.2rem;
     }
 }
 
@@ -128,10 +136,18 @@
     .hero_content {
         margin: 0 10px;
     }
+
+    .hero_text h1 {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 321px) {
     .hero_content {
         margin: 0 5px;
+    }
+
+    .hero_text h1 {
+        font-size: 1.8rem;
     }
 }

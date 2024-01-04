@@ -136,6 +136,10 @@
         margin: 2rem 0 !important;
         height: auto;
     }
+
+    .stc_title {
+        font-size: 2.6rem;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -150,11 +154,19 @@
     .st_component .st_paper_bottom {
         bottom: -20%;
     }
+
+    .stc_title {
+        font-size: 2.2rem;
+    }
 }
 
 @media only screen and (max-width: 376px) {
     .stc_content {
         margin: 0 10px;
+    }
+
+    .stc_title {
+        font-size: 2rem;
     }
 }
 
@@ -169,5 +181,9 @@
     
     .st_component .st_paper_bottom {
         bottom: -14%;
+    }
+
+    .stc_title {
+        font-size: 1.8rem;
     }
 }

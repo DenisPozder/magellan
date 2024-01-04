@@ -5,12 +5,6 @@ import styles from "./reservation-hero.module.css";
 
 const ReservationHero = () => {
   useEffect(() => {
-    // Add the viewport meta tag dynamically
-    const viewportMeta = document.createElement("meta");
-    viewportMeta.name = "viewport";
-    viewportMeta.content = "width=device-width, initial-scale=1";
-    document.head.appendChild(viewportMeta);
-
     // Load the external script dynamically
     const script = document.createElement("script");
     script.src = "https://w.eventlin.com/widget/widget30.min.js";
@@ -31,13 +25,19 @@ const ReservationHero = () => {
 
     // Cleanup when component unmounts
     return () => {
-      document.head.removeChild(script);
-      document.head.removeChild(link);
-      document.head.removeChild(viewportMeta);
+      // Check if the script is present before removing
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+  
+      // Check if the link is present before removing
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
     };
   }, []);
 
-  const buttonHtml = `<div class="eventlin-btn" name="Magellan" merchantId="6453">nova rezervacija</div>`;
+  const buttonHtml = `<div class="eventlin-btn" name="Magellan" merchantId="6453">rezerviši mesto</div>`;
 
   return (
     <>
@@ -53,13 +53,13 @@ const ReservationHero = () => {
               <span>Rezervišite vaše</span>
               <span>mesto za putovanje</span>
             </h1>
-            <p>
+            <p className={styles.reservation_par1}>
               Ukoliko želite da rezervišete vaše mesto u našem restoranu, to
               možete uraditi putem formulara kojem možete da pristupite klikom
               na dugme ispod.
             </p>
-            <p>Vidimo se uskoro !</p>
-            <div dangerouslySetInnerHTML={{ __html: buttonHtml }}></div>
+            <p className={styles.reservation_par2}>Vidimo se uskoro !</p>
+            <div className={styles.reservation_btn} dangerouslySetInnerHTML={{ __html: buttonHtml }}></div>
           </div>
         </div>
       </div>

@@ -1,0 +1,69 @@
+.reservation_slider {
+    width: 100%;
+    height: 140vh;
+    position: relative;
+}
+
+.reservation_slider .rs_carousel {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reservation_slider .rs_carousel .rs_inner {
+    display: flex;
+    width: 100%;
+    height: 140vh;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+
+.reservation_slider .rs_carousel .rs_inner .rs_item {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 140vh;
+    align-items: center;
+    justify-content: center;
+    min-height: 140vh;
+}
+
+.reservation_slider .rs_carousel .rs_inner .rs_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reservation_slider .rs_carousel .rs_btns {
+    position: absolute;
+    left: 120px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 300px;
+}
+
+.reservation_slider .rs_carousel .rs_btns .rs_btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+.reservation_slider .rs_carousel .rs_btns .rs_btn svg {
+    color: var(--white);
+}
+

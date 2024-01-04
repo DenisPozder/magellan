@@ -1,4 +1,5 @@
 import ReservationHero from "./components/ReservationHero/ReservationHero"
+import ReservationSlider from "./components/ReservationSlider/ReservationSlider"
 
 
 const page = () => {
@@ -6,6 +7,7 @@ const page = () => {
     <>
     <div>
       <ReservationHero />
+      <ReservationSlider />
     </div>
     </>
   )

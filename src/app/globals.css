@@ -16,3 +16,18 @@
   height: 100%;
   overflow: hidden;
 }
+
+.eventlin-btn {
+  width: 240px !important;
+  line-height: 0 !important;
+  height: 45px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background-color: var(--yellow) !important;
+  text-transform: uppercase !important;
+  font-size: 1rem !important;
+  margin: 0 !important;
+}

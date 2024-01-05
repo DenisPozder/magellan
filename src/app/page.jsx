@@ -6,7 +6,15 @@ export default function Home() {
   return (
     <>
       <main className="page_section">
-        <Hero />
+        <Hero
+          paper={"/paper1.png"}
+          title1={"Putujte kroz"}
+          title2={"svet ukusa."}
+          desc={
+            "U prijatnoj atmosferi našeg restorana, krenite na put oko sveta. Sigurni smo da čak i najzahtevnije sladokusce nećemo ostaviti ravnodušnim."
+          }
+          link={"/reservations"}
+        />
         <ITComponent
           image={"/menuImg.jpg"}
           link={"#"}

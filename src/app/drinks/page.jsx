@@ -1,4 +1,4 @@
-import DrinksHero from "./components/DrinksHero/DrinksHero";
+import Hero from "@/components/Hero/Hero";
 import DrinksImage from "./components/DrinksImage/DrinksImage";
 import DrinksItems from "./components/DrinksItems/DrinksItems";
 
@@ -525,7 +525,15 @@ const DrinksExamples4 = [
 const page = () => {
   return (
     <div>
-      <DrinksHero />
+      <Hero
+        paper={"/paper1.png"}
+        title1={"Magellan"}
+        title2={"karta pića"}
+        desc={
+          "Raznovrsna karta pića restorana oduševljava širokim spektrom pažljivo odabranih vina, osvežavajućih koktela i vrhunskih alkoholnih pića."
+        }
+        link={"/reservations"}
+      />
       <DrinksImage image="/coffee.jpg" />
       <DrinksItems
         paper1={"/paper2.png"}

@@ -1,12 +1,12 @@
-.wines_hero {
+.drinks_hero {
+    position: relative;
     width: 100%;
     height: 60vh;
-    position: relative;
     z-index: 2;
     background: linear-gradient(to bottom, var(--purple) 50%, transparent);
 }
 
-.wines_hero_img {
+.drinks_hero_image {
     width: 100%;
     height: calc(60vh + 400px);
     position: absolute;
@@ -17,7 +17,7 @@
     pointer-events: none;
 }
 
-.wines_hero_content {
+.drinks_hero_content {
     z-index: 4;
     position: relative;
     margin: 0 120px;
@@ -28,96 +28,92 @@
     height: 100%;
 }
 
-.wines_hero_text {
+.drinks_hero_text {
     display: flex;
     flex-direction: column;
 }
 
-.wines_hero_text h1 {
+.drinks_hero_text h1 {
     display: flex;
     flex-direction: column;
     font-size: 3rem;
     color: var(--white);
 }
 
-.wines_hero_text p {
+.drinks_hero_text p {
     max-width: 400px;
     color: var(--white);
     margin: 2rem 0;
 }
 
-.wines_hero_text a {
+.drinks_hero_text a {
     width: 240px;
     height: 45px;
-    background-color: var(--yellow);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+    background-color: var(--yellow);
     color: var(--purple);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1440px) {
-    .wines_hero_content {
+    .drinks_hero_content {
         margin: 0 80px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .wines_hero_content {
+    .drinks_hero_content {
         margin: 0 50px;
-    }
-
-    .wines_hero_img {
-        height: calc(60vh + 280px);
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .wines_hero_content {
+    .drinks_hero_content {
         margin: 0 25px;
     }
 
-    .wines_hero {
+    .drinks_hero {
         height: 70vh;
     }
 
-    .wines_hero .wines_hero_img {
-        height: calc(70vh + 200px);
+    .drinks_hero .drinks_hero_image {
+        height: calc(70vh + 300px);
     }
 
-    .wines_hero_text h1 {
+    .drinks_hero_text h1 {
         font-size: 2.6rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .wines_hero_content {
+    .drinks_hero_content {
         margin: 0 15px;
     }
 
-    .wines_hero_text h1 {
+    .drinks_hero_text h1 {
         font-size: 2.2rem;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    .wines_hero_content {
+    .drinks_hero_content {
         margin: 0 10px;
     }
 
-    .wines_hero_text h1 {
+    .drinks_hero_text h1 {
         font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 321px) {
-    .wines_hero_content {
+    .hero_content {
         margin: 0 5px;
     }
 
-    .wines_hero_text h1 {
+    .hero_text h1 {
         font-size: 1.8rem;
     }
 }

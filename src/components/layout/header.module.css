@@ -5,6 +5,9 @@
     width: 100%;
     height: 100px;
     transition: all .4s ease;
+    background-color: var(--purple);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .header_section.header_scroll {

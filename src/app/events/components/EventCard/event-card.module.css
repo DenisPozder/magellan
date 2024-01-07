@@ -73,3 +73,36 @@
   .event_card_alternate .event_card_text {
     order: 1;
 }
+
+@media only screen and (max-width: 1440px) {
+    .event_card {
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .event_card {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .event_card {
+        gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .event_card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .event_card_alternate {
+        grid-template-columns: 1fr;
+        grid-template-areas: "text";
+    }
+
+    .event_card_alternate .event_card_img {
+        order: -1;
+    }
+}

@@ -213,6 +213,10 @@
         right: 5px !important;
     }
 
+    .events_slider_carousel .events_slider_item .event_item_content .event_item_text h1 {
+        font-size: 3.2rem;
+    }
+
     .events_slider_carousel .events_slider_item .event_item_content .event_item_text {
         margin: 0 5px;
     }

@@ -47,11 +47,21 @@
     .all_events .all_events_section .all_events_content {
         margin: 0 25px;
     }
+
+    .all_events .all_events_img {
+        width: 100%;
+        top: -300px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .all_events .all_events_section .all_events_content {
         margin: 0 15px;
+    }
+
+    .all_events .all_events_img {
+        width: 140%;
+        top: -200px;
     }
 }
 
@@ -59,10 +69,20 @@
     .all_events .all_events_section .all_events_content {
         margin: 0 10px;
     }
+
+    .all_events .all_events_img {
+        width: 180%;
+        top: -200px;
+    }
 }
 
 @media only screen and (max-width: 321px) {
     .all_events .all_events_section .all_events_content {
         margin: 0 5px;
+    }
+
+    .all_events .all_events_img {
+        width: 200%;
+        top: -200px;
     }
 }

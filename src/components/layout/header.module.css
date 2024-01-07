@@ -117,12 +117,6 @@
     .header_content {
         margin: 0 50px;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .header_content {
-        margin: 0 25px;
-    }
 
     .header_links {
         position: fixed;
@@ -154,6 +148,12 @@
 
     .header_close_content {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header_content {
+        margin: 0 25px;
     }
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Rudder from "@/svg/rudder";
+import Rudder from "@/svg/Rudder";
 import styles from "./loader.module.css";
 import { useEffect, useState } from "react";
 

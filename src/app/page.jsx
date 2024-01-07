@@ -1,10 +1,12 @@
 import Hero from "@/components/Hero/Hero";
 import ITComponent from "@/components/ITComponent/ITComponent";
+import Loader from "@/components/Loader/Loader";
 import STComponent from "@/components/STComponent/STComponent";
 
 export default function Home() {
   return (
     <>
+    <Loader />
       <main className="page_section">
         <Hero
           paper={"/paper1.png"}

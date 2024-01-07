@@ -13,6 +13,10 @@ const HeaderLinks = [
         link: '/'
     },
     {
+        title: "događaji",
+        link: '/events'
+    },
+    {
         title: "jelovnik",
         link: '/menu'
     },

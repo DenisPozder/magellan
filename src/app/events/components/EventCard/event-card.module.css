@@ -1,0 +1,75 @@
+.event_card {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+}
+  
+.event_card .event_card_img {
+    width: 100%;
+    height: 600px;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.event_card .event_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event_card .event_card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event_card .event_card_text .ec_category {
+    margin-bottom: 2rem;
+    color: var(--yellow);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event_card .event_card_text .ec_title {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.event_card .event_card_text .ec_desc {
+    margin: 2rem 0;
+    max-width: 400px;
+    color: var(--white);
+}
+
+.event_card .event_card_text a {
+    width: 240px;
+    height: 45px;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--purple);
+    text-decoration: none;
+    margin-top: 2rem !important;
+    font-weight: 600;
+}
+
+/*----- Every second card -----*/
+.event_card_alternate {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+}
+
+.event_card_alternate .event_card_img {
+    order: 2;
+}
+  
+  .event_card_alternate .event_card_text {
+    order: 1;
+}

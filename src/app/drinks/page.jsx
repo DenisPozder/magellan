@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import DrinksImage from "./components/DrinksImage/DrinksImage";
 import DrinksItems from "./components/DrinksItems/DrinksItems";
+import Loader from "@/components/Loader/Loader";
 
 export const metadata = {
   title: "Karta pića - Magellan",
@@ -524,37 +525,40 @@ const DrinksExamples4 = [
 
 const page = () => {
   return (
-    <div>
-      <Hero
-        paper={"/paper1.png"}
-        title1={"Magellan"}
-        title2={"karta pića"}
-        desc={
-          "Raznovrsna karta pića restorana oduševljava širokim spektrom pažljivo odabranih vina, osvežavajućih koktela i vrhunskih alkoholnih pića."
-        }
-        link={"/reservations"}
-      />
-      <DrinksImage image="/coffee.jpg" />
-      <DrinksItems
-        paper1={"/paper2.png"}
-        paper2={"/paper3.png"}
-        data={DrinksExamples}
-      />
-      <DrinksImage image="/coffee.jpg" />
-      <DrinksItems
-        paper1={"/paper4.png"}
-        paper2={"/paper1.png"}
-        data={DrinksExamples2}
-      />
-      <DrinksImage image="/coffee.jpg" />
-      <DrinksItems
-        paper1={"/paper2.png"}
-        paper2={"/paper3.png"}
-        data={DrinksExamples3}
-      />
-      <DrinksImage image="/coffee.jpg" />
-      <DrinksItems paper1={"/paper2.png"} data={DrinksExamples4} />
-    </div>
+    <>
+    <Loader />
+      <div className="page_section">
+        <Hero
+          paper={"/paper1.png"}
+          title1={"Magellan"}
+          title2={"karta pića"}
+          desc={
+            "Raznovrsna karta pića restorana oduševljava širokim spektrom pažljivo odabranih vina, osvežavajućih koktela i vrhunskih alkoholnih pića."
+          }
+          link={"/reservations"}
+        />
+        <DrinksImage image="/coffee.jpg" />
+        <DrinksItems
+          paper1={"/paper2.png"}
+          paper2={"/paper3.png"}
+          data={DrinksExamples}
+        />
+        <DrinksImage image="/coffee.jpg" />
+        <DrinksItems
+          paper1={"/paper4.png"}
+          paper2={"/paper1.png"}
+          data={DrinksExamples2}
+        />
+        <DrinksImage image="/coffee.jpg" />
+        <DrinksItems
+          paper1={"/paper2.png"}
+          paper2={"/paper3.png"}
+          data={DrinksExamples3}
+        />
+        <DrinksImage image="/coffee.jpg" />
+        <DrinksItems paper1={"/paper2.png"} data={DrinksExamples4} />
+      </div>
+    </>
   );
 };
 

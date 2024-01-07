@@ -29,6 +29,9 @@
   background-color: var(--yellow) !important;
   text-transform: uppercase !important;
   font-size: 1rem !important;
-  margin: 0 !important;
+  margin-top: 2rem !important;
   color: var(--purple) !important;
+  font-weight: 600 !important;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 5 !important;
 }

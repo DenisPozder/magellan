@@ -22,7 +22,7 @@ const Loader = ({ children }) => {
           <div className={styles.loader_content}>
             <img src="/magellan-white.png" alt="Loader logo" />
             <Rudder />
-            <p>Dobrodošli</p>
+            <p>dobrodošli</p>
           </div>
         </div>
       ) : (

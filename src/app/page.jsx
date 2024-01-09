@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import ITComponent from "@/components/ITComponent/ITComponent";
 import Loader from "@/components/Loader/Loader";
+import RAComponent from "@/components/RAComponent/RAComponent";
 import STComponent from "@/components/STComponent/STComponent";
 import Layout from "@/components/layout/Layout";
 
@@ -38,6 +39,7 @@ export default function Home() {
           desc={"Gin, Campari & Martini bitter"}
           linkTitle={"karta pića"}
         />
+        <RAComponent />
       </main>
       </Layout>
     </>

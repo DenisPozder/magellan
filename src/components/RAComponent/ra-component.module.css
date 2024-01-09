@@ -1,0 +1,33 @@
+.ra_component {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.ra_component .ra_component_img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -400px;
+}
+
+.ra_component .ra_component_content {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background-color: var(--purple);
+}
+
+@media only screen and (max-width: 768px) {
+    .ra_component .ra_component_img {
+        width: 120%;
+        top: -300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ra_component .ra_component_img {
+        width: 160%;
+        top: -200px;
+    }
+}

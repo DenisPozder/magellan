@@ -1,0 +1,133 @@
+.review_slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review_slider .rs_title {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.review_slider .review_slider_content {
+    width: 100%;
+    height: auto;
+}
+
+.review_slider .review_slider_content .review_slider_card {
+    display: flex;
+    height: 420px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.review_slider .review_slider_content .review_slider_card .review_slider_inner {
+    width: 95%;
+    height: 100%;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    border-radius: 20px;
+}
+
+.review_slider .review_slider_content .review_slider_card .review_slider_inner .rsi_text {
+    padding: 1.5rem 1rem;
+}
+
+.rsi_date {
+    margin: 1rem 0;
+}
+
+.rsi_comment {
+    margin-top: 1rem;
+}
+
+.rsit_star {
+    display: flex;
+    align-items: center;
+}
+
+.rsit_star svg {
+    color: var(--yellow) !important;
+    font-size: 1.6rem;
+    margin: 0 .5rem;
+}
+
+.rsit_star svg:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+.rsit_star svg:nth-child(5) {
+    margin-right: 0 !important;
+}
+
+/*----- Review slider btns -----*/
+.review_slider_btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .4s ease;
+}
+
+.review_slider_btn:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.review_slider_btn svg {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.review_slider_next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.review_slider_prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .review_slider .rs_title {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .review_slider .rs_title {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .review_slider .rs_title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .review_slider .rs_title {
+        font-size: 1.8rem;
+    }
+}

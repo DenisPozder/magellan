@@ -1,0 +1,13 @@
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    margin: 0 .6rem;
+}
+
+.rating span svg {
+    color: var(--yellow);
+    font-size: 2.6rem;
+}

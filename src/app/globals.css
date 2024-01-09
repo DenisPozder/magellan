@@ -35,3 +35,12 @@
   font-family: 'Montserrat', sans-serif;
   z-index: 5 !important;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}

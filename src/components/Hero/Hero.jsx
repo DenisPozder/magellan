@@ -1,17 +1,22 @@
+"use client"
+
 import Link from "next/link";
 import styles from "./hero.module.css";
-import Image from "next/image";
+import { useEffect } from "react";
+import { SetupIntersectionObserver } from "@/app/utils/IntersectionObserver";
 
 const Hero = ({ paper, title1, title2, desc, desc2, link }) => {
+
+  useEffect(() => {
+    SetupIntersectionObserver()
+  },[])
+
   return (
     <div className={styles.hero_section}>
-      <Image
+      <img
         src={paper}
-        width={1000}
-        height={600}
         alt="Prvi dekorativni papir"
         className={styles.hero_image}
-        priority
       />
       <div className={styles.hero_content}>
         <div className={styles.hero_text}>

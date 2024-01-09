@@ -14,25 +14,25 @@ const DrinksItems = ({ paper1, paper2, data }) => {
                                 {
                                     drink.drinks.map(drinkItem => (
                                         <div key={drinkItem.title} className={styles.drink_item_content}>
-                                            <h3>
+                                            <p className={styles.dic_p}>
                                             <span>{drinkItem.title}</span>
                                             {
                                                 drinkItem.subTitle && (
                                                     <span>{drinkItem.subTitle}</span>
                                                 )
                                             }
-                                            </h3>
+                                            </p>
                                             {
                                                 drinkItem.percentage && (
-                                                    <p>{drinkItem.percentage}</p>
+                                                    <p className={styles.drink_item_percentage}>{drinkItem.percentage}</p>
                                                 )
                                             }
                                             {
                                                 drinkItem.neto && (
-                                                    <p>{drinkItem.neto}</p>
+                                                    <p className={styles.drink_item_neto}>{drinkItem.neto}</p>
                                                 )
                                             }
-                                            <p>{drinkItem.price}</p>
+                                            <p className={styles.drink_item_price}>{drinkItem.price}</p>
                                         </div>
                                     ))
                                 }

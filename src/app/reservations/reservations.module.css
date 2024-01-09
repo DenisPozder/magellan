@@ -1,6 +1,6 @@
 .reservations_paper {
     width: 100%;
-    height: 480px;
+    height: 140px;
     background-color: var(--purple);
     position: relative;
 }

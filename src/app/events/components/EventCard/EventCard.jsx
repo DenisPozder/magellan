@@ -11,7 +11,7 @@ const EventCard = ({event, alternate}) => {
             <p className={styles.ec_category}>{event.category}</p>
             <h1 className={styles.ec_title}><span>{event.title1}</span><span>{event.title2}</span></h1>
             <p className={styles.ec_desc}>{event.desc}</p>
-            <Link href={'#'}>više informacija</Link>
+            <Link href={`#`}>više informacija</Link>
         </div>
     </div>
   )

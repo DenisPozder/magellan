@@ -2,6 +2,7 @@ import Hero from "@/components/Hero/Hero";
 import AllWines from "./components/AllWines/AllWines";
 import WinesSlider from "./components/WinesSlider/WinesSlider";
 import Loader from "@/components/Loader/Loader";
+import Layout from "@/components/layout/Layout";
 
 export const metadata = {
   title: "Vinska karta - Magellan",
@@ -12,6 +13,7 @@ const page = () => {
   return (
     <>
       <Loader />
+      <Layout>
       <div className="page_section">
         <Hero
           paper={"/paper1.png"}
@@ -25,6 +27,7 @@ const page = () => {
         <WinesSlider />
         <AllWines />
       </div>
+      </Layout>
     </>
   );
 };

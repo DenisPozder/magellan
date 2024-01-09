@@ -1,8 +1,9 @@
 import EventCard from '../EventCard/EventCard'
 import styles from './all-events.module.css'
 
-const AllEventsData = [
+export const AllEventsData = [
     {
+        id: 1,
         title1: "Novi meni od",
         title2: "nove godine",
         category: "vesti",
@@ -10,6 +11,7 @@ const AllEventsData = [
         image: "/coffee.jpg",
     },
     {
+        id: 2,
         title1: "Novi meni od",
         title2: "nove godine",
         category: "vesti",
@@ -17,6 +19,7 @@ const AllEventsData = [
         image: "/coffee.jpg",
     },
     {
+        id: 3,
         title1: "Novi meni od",
         title2: "nove godine",
         category: "vesti",

@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero/Hero";
 import Loader from "@/components/Loader/Loader";
+import Layout from "@/components/layout/Layout";
 import React from "react";
 
 export const metadata = {
@@ -11,6 +12,7 @@ const page = () => {
   return (
     <>
     <Loader />
+    <Layout>
       <div className="page_section">
         <Hero
           paper={"/paper1.png"}
@@ -22,6 +24,7 @@ const page = () => {
           link={"/reservations"}
         />
       </div>
+      </Layout>
     </>
   );
 };

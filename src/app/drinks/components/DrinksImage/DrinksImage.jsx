@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import styles from './drinks-image.module.css'
 
 const DrinksImage = ({ image }) => {
   return (
     <div className={styles.drinks_image}>
-        <img src={image} alt="Slika koktela" />
+        <Image loading='lazy' fill="full" src={image} alt="Slika koktela" />
     </div>
   )
 }

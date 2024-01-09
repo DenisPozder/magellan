@@ -1,9 +1,13 @@
+"use client"
+
 import styles from './st-component.module.css'
 import Link from 'next/link'
 import { FaAngleRight } from 'react-icons/fa'
 import CardSlider from '../CardSlider/CardSlider'
 
-const _items = [
+const slideWidth = 320;
+
+export const _items = [
   {
     item: {
       id: 1,
@@ -66,6 +70,54 @@ const _items = [
   },
 ];
 
+const length = _items.length
+_items.push(..._items)
+
+const keys = Array.from(Array(_items.length).keys());
+
+export const createItem = (position, idx) => {
+  const item = {
+    styles: {
+      transform: `translateX(${position * slideWidth}px)`,
+    },
+    item: _items[idx].item,
+  }
+
+  switch (position) {
+    case length - 1:
+      item.styles = {
+        ...item.styles,
+        height: "380px",
+        top: "30px",
+        left: "140px",
+        opacity: ".6",
+      }
+      break
+    case length + 1:
+      item.styles = {
+        ...item.styles,
+        height: "380px",
+        top: "30px",
+        left: "-140px",
+        opacity: ".6",
+      }
+      break
+    case length:
+      item.styles = { ...item.styles, zIndex: "2" }
+      break
+    default:
+      item.styles = {
+        ...item.styles,
+        opacity: 0,
+        height: "380px",
+        top: "30px",
+      }
+      break
+  }
+
+  return item
+}
+
 const STComponent = () => {
   return (
     <div className={styles.st_component}>
@@ -79,7 +131,7 @@ const STComponent = () => {
                 <Link className={styles.stc_btn} href={'#'}>karta pića <FaAngleRight /></Link>
             </div>
             <div className={styles.stc_slider}>
-                <CardSlider />
+                <CardSlider data={keys} length={length} />
             </div>
         </div>
     </div>

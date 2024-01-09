@@ -2,11 +2,13 @@ import Hero from "@/components/Hero/Hero";
 import ITComponent from "@/components/ITComponent/ITComponent";
 import Loader from "@/components/Loader/Loader";
 import STComponent from "@/components/STComponent/STComponent";
+import Layout from "@/components/layout/Layout";
 
 export default function Home() {
   return (
     <>
-    <Loader />
+      <Loader />
+      <Layout>
       <main className="page_section">
         <Hero
           paper={"/paper1.png"}
@@ -37,6 +39,7 @@ export default function Home() {
           linkTitle={"karta pića"}
         />
       </main>
+      </Layout>
     </>
   );
 }

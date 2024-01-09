@@ -2,11 +2,13 @@ import Hero from "@/components/Hero/Hero";
 import ReservationSlider from "./components/ReservationSlider/ReservationSlider";
 import styles from "./reservations.module.css";
 import Loader from "@/components/Loader/Loader";
+import Layout from "@/components/layout/Layout";
 
 const page = () => {
   return (
     <>
     <Loader />
+    <Layout>
       <div className="page_section">
         <Hero
           paper={"/paper1.png"}
@@ -23,6 +25,7 @@ const page = () => {
           <img src="/paper4.png" alt="Dekorativni papir 4" />
         </div>
       </div>
+      </Layout>
     </>
   );
 };

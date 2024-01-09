@@ -9,6 +9,7 @@
     width: 100%;
     height: auto;
     top: -400px;
+    pointer-events: none;
 }
 
 .ra_component .ra_component_content {
@@ -16,6 +17,12 @@
     height: auto;
     padding: 3rem 0;
     background-color: var(--purple);
+}
+
+@media only screen and (min-width: 1920px) {
+    .ra_component .ra_component_img {
+        top: -500px;
+    }
 }
 
 @media only screen and (max-width: 768px) {

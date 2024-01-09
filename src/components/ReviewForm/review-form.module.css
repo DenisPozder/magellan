@@ -97,6 +97,23 @@
     color: var(--white);
 }
 
+/*----- Stars -----*/
+.rfc_form form .rfc_stars {
+    display: flex;
+    align-items: center;
+}
+
+.rfc_form form .rfc_stars .rfc_star {
+    color: var(--white);
+    font-size: 2rem;
+    margin: 0 .6rem;
+    cursor: pointer;
+}
+
+.rfc_form form .rfc_stars .rfc_star.selected {
+    color: var(--yellow);
+}
+
 @media only screen and (max-width: 1440px) {
     .review_form_content {
         margin: 0 80px;

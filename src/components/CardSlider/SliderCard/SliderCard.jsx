@@ -1,12 +1,13 @@
 import React from "react";
 import styles from '../card-slider.module.css'
-import { createItem } from "@/components/STComponent/STComponent";
+import Image from "next/image";
+import { createItem } from "../CardSlider";
 
 const SliderCard = ({ pos, idx, activeIdx }) => {
   const item = createItem(pos, idx, activeIdx);
   return (
     <div className={styles.slider_card} style={item.styles}>
-      <img src={item.item.image} alt="Slika" />
+      <Image fill="full" loading="lazy" src={item.item.image} alt="Slika" />
       <div className={styles.slider_card_box}>
         <div className={styles.scb_left}>
           <img src="/label.png" alt="Magellan michelin" />

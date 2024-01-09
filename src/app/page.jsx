@@ -22,7 +22,7 @@ export default function Home() {
         />
         <ITComponent
           image={"/menuImg.jpg"}
-          link={"#"}
+          link={"/menu"}
           firstTitle={"Teletina"}
           secondTitle={"'Sous Vide'"}
           price={"2500 RSD"}
@@ -31,7 +31,7 @@ export default function Home() {
         />
         <STComponent />
         <ITComponent
-          link={"#"}
+          link={"/drinks"}
           image={"/cocktailImg.jpg"}
           firstTitle={"Negroni"}
           secondTitle={"Koktel"}

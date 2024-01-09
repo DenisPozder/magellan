@@ -2,6 +2,7 @@
     width: 100%;
     height: 120vh;
     position: relative;
+    max-height: 1100px;
 }
 
 .it_component img {

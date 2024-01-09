@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './it-component.module.css'
 import Link from 'next/link'
 import { FaAngleRight } from "react-icons/fa";
@@ -5,7 +6,7 @@ import { FaAngleRight } from "react-icons/fa";
 const ITComponent = ({ image, firstTitle, secondTitle, price, desc, link, linkTitle }) => {
   return (
     <div className={styles.it_component}>
-        <img src={image} alt={firstTitle + ' ' + secondTitle} />
+        <Image fill="full" src={image} alt={firstTitle + ' ' + secondTitle} loading='lazy' />
         <div className={styles.itc_wrap}>
             <div className={styles.itc_content}>
                 <div className={styles.itc_box}>
